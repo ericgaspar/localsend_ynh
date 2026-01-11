@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+A web app integrating WebRTC and WebSockets to share files with other LocalSend peers. 
