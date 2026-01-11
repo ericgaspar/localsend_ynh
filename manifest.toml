@@ -66,9 +66,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/foo/bar/archive/refs/tags/v1.2.3.tar.gz"
-    sha256 = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
-
+    url = "https://github.com/localsend/web/archive/24c69991613fb0210156398f434675629999e73a.tar.gz"
+    sha256 = "95fa23dfb644a970ba99012dcb87b7f02acc75d5c5d4f1a0281fef5effc5f5aa"
     # autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
@@ -81,9 +80,3 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.ports]
-
-    [resources.apt]
-    packages = "mariadb-server, deb1, deb2, php8.3-foo, php8.3-bar"
-
-    [resources.database]
-    type = "mysql"
