@@ -15,7 +15,6 @@ maintainers = ["eric_G"]
 license = "Apache-2.0"
 website = "https://localsend.org/"
 demo = "https://web.localsend.org/"
-admindoc = "https://yunohost.org/packaging_apps"
 code = "https://github.com/localsend/web"
 
 [integration]
@@ -39,9 +38,6 @@ ram.runtime = "50M"
     type = "group"
     default = "visitors"
 
-    #[install.admin]
-    #type = "user"
-
 [resources]
 
     [resources.sources]
@@ -49,18 +45,14 @@ ram.runtime = "50M"
     [resources.sources.main]
     url = "https://github.com/localsend/web/archive/24c69991613fb0210156398f434675629999e73a.tar.gz"
     sha256 = "95fa23dfb644a970ba99012dcb87b7f02acc75d5c5d4f1a0281fef5effc5f5aa"
-    # autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
     [resources.install_dir]
 
-    [resources.data_dir]
-
     [resources.permissions]
     main.url = "/"
-
-    [resources.ports]
 
     [resources.nodejs]
     version = "22"
